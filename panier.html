@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <script src="assets/js/include.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panier de Yoplait</title>
+</head>
+<body>
+  <header w3-include-html="header.html"></header>
+  <!--Cut the head off-->
+
+  <main>
+    <div class="ariane">
+        <a href="index.html">Accueil</a> > <a href="panier.html">Panier</a>
+    </div>
+    <div>
+        <form action="paiement.html" method="POST">
+            <table>
+                <tr>
+                    <th>Produit</th>
+                    <th>Quantité</th>
+                    <th>Prix</th>
+                    <th>Total</th>
+                </tr>
+                <tr>
+                    <td>Pin's Sacrée Soirée</td>
+                    <td><input type="number" value="1" min="1" name="quantite" class="quantite"></td>
+                    <td>49.99</td>
+                    <td>49.99</td>
+                </tr>
+                <tr>
+                    <td>Désanusseur de porc</td>
+                    <td><input type="number" value="1" min="1" name="quantite" class="quantite"></td>
+                    <td>19</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <td>Timbre poste Michel Sardou</td>
+                    <td><input type="number" value="1" min="1" name="quantite" class="quantite"></td>
+                    <td>35</td>
+                    <td>35</td>
+                </tr>
+            </table>
+            <button type="submit">Paiement</button>
+        </form>
+        
+            
+    </div>
+  </main>
+  
+  <!--Cute the body part-->
+  <footer w3-include-html="footer.html"></footer> 
+  <script>
+  includeHTML();
+  </script> 
+</body>
+</html>

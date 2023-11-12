@@ -4,11 +4,32 @@
   <script src="assets/js/include.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
+  <title>Accueil</title>
 </head>
 <body>
-  <header w3-include-html="header.html"></header> 
-  <main w3-include-html="main.html"></main> 
+  <header w3-include-html="header.html"></header>
+  <!--Cut the head off-->
+
+  <main>
+    <div class="ariane">
+       <a href="index.html">Accueil</a>
+    </div>
+    <div class="bandeau">
+        <img src="assets/img/bandal.jpg" alt="Un bon gros bandal">
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam beatae ea omnis eligendi dicta unde iure aut repudiandae voluptatum numquam. Ipsum modi praesentium, libero enim nulla vero eligendi corrupti. Tempora?</p>
+    </div>
+    <div class="topVentes">
+        <div class="top3">
+            <a href="produit.html"><img src="assets/img/ironmaiden.jpg" alt="Armure de vache qui rit" title="Armure de vache qui rit" height="150"></a>
+            <a href="produit.html"><img src="assets/img/varta.jpg" alt="Serume de vérité" title="Serume de vérité" height="150"></a>
+            <a href="produit.html"><img src="assets/img/dildal.webp" alt="Les mains de ma soeur" title="Les mains de ma soeur" height="150"></a>
+        </div>
+    </div>
+  </main>
+  
+  <!--Cute the body part-->
   <footer w3-include-html="footer.html"></footer> 
   <script>
   includeHTML();

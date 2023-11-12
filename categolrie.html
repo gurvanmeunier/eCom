@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <script src="assets/js/include.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catégolries</title>
+</head>
+<body>
+  <header w3-include-html="header.html"></header>
+  <!--Cut the head off-->
+
+  <main>
+    <div class="ariane">
+        <a href="index.html">Accueil</a> > <a href="categolrie.html">Catégories</a>
+    </div>
+    <fieldset id="fieldGauche">
+        <legend>Filtre</legend>
+        <input type="checkbox" name="article[]" value="pelle" id="pelle">
+        <label for="pelle">Pelle à tarte</label>
+        <br>
+        <input type="checkbox" name="article[]" value="electrode" id="electrode">
+        <label for="electrode">Électrode à renard</label>
+        <br>
+        <input type="checkbox" name="article[]" value="sonde" id="sonde">
+        <label for="sonde">Sonde d'insémination</label>
+        <br>
+        <input type="checkbox" name="article[]" value="speculum" id="speculum">
+        <label for="speculum">Spéculoos vaginale</label>
+    </fieldset>
+    <fieldset id="fieldDroite">
+        <legend>Produits</legend>
+        <div class="ligne1">
+            <a href="produit.html">Mélangeur à semence</a>
+            <a href="produit.html">Cure oreil</a>
+        </div>
+        <div class="ligne2">
+            <a href="produit.html">Sécateur oculaire</a>
+            <a href="produit.html">Article4</a>
+        </div>
+        <div class="ligne3">
+            <a href="produit.html">Article5</a>
+            <a href="produit.html">Article6</a>
+        </div>
+    </fieldset>
+  </main>
+  
+  <!--Cute the body part-->
+  <footer w3-include-html="footer.html"></footer> 
+  <script>
+  includeHTML();
+  </script> 
+</body>
+</html>
